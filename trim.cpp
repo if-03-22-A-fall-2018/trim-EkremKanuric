@@ -25,10 +25,10 @@ void trim	(const char* source,char* trimmed_string)
  }
 
 //get start of string
- for (start; source[start] == ' '; start++){}
+ for (start; source[start] == ' '; start++);
 
 //get end of string
- for (end;source[end] == ' '; end--){}
+ for (end;source[end] == ' '; end--);
 
 //copy string into trimmed_string
  for (int i = 0; start <= end; i++) {
